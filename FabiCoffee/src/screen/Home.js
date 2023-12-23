@@ -6,7 +6,7 @@ export default function Home({ navigation }) {
   const { Hot } = data
   const { Snack } = data
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#faebd7', marginTop: 50 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff', marginTop: 50 }}>
       <View style={styles.header}>
         <TextInput style={{ width: 370, height: 30, backgroundColor: 'white', marginLeft: 10, borderRadius: 5, borderWidth: 1, }} placeholder='Search' />
       </View>
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   button: {
     width: 100,
     height: 24,
-    backgroundColor: '#f0ffff',
+    backgroundColor: '#ffebcd',
     alignItems: 'center',
     margin: 5,
     borderRadius: 16,

@@ -19,9 +19,9 @@ export default function Notification({ navigation }) {
                         fontWeight: '500',
                         fontSize: 14,}}>
                 {Noti.map((item) => (
-                    <View style={{flexDirection:"row", marginTop:17,}}>
-                        <Text style={{fontSize:17}}>{item.id}.</Text>
-                        <Text style={{fontSize:17}}> {item.name} </Text>
+                    <View style={{flexDirection:"row", marginTop:17,borderBottomWidth: 1, borderColor: '#ccc',}}>
+                        {/* <Text style={{fontSize:17}}>{item.id}.</Text> */}
+                        <Text style={{fontSize:17, marginBottom:15,}}> {item.name} </Text>
                     </View>
                 ))}
 
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         color: '#000',
+        backgroundColor:'#fff'
     },
     touchback: {
         paddingHorizontal: 10,
